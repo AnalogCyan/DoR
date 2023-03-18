@@ -1,11 +1,11 @@
 import os
 import socket
 import logging
+import time
 from dnslib import DNSRecord, RR, A, QTYPE
 from dnslib.server import DNSServer, BaseResolver
 import requests
 from concurrent.futures import ThreadPoolExecutor
-
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -39,12 +39,15 @@ class RandomIPResolver(BaseResolver):
         q = request.q
         if q.qtype == QTYPE.A:
             logger.debug('Resolving IP address for query: %s', q.qname)
+            start_time = time.time()
             ip = self.find_valid_ip()
-            logger.debug('Found valid IP: %s', ip)
+            elapsed_time = time.time() - start_time
+            logger.debug(
+                'Found valid IP: %s (elapsed time: %.2f seconds)', ip, elapsed_time)
             reply.add_answer(
                 RR(rname=q.qname, rtype=QTYPE.A, rdata=A(ip), ttl=60))
         return reply
-    
+
     def shutdown(self):
         self.executor.shutdown()
 
