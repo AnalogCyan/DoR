@@ -1,6 +1,6 @@
 # 🔗 DoR - DNS over RNG
 
-DoR (DNS over RNG) is a parody project inspired by the various DNS-over-[protocol] standards. It's a DNS server that returns random IP addresses, sending you to random websites on every request. This project is meant for fun and entertainment purposes only.
+DoR (DNS over RNG) is a parody project inspired by the various DNS-over-`protocol` standards. It's a DNS server that returns random IP addresses, sending you to random websites on every request. This project is meant for fun and entertainment purposes only.
 
 The server has been updated to be more efficient, but it is still not recommended to use as your primary DNS server. Use this project at your own risk, and enjoy the chaos it brings.
 
