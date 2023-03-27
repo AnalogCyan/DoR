@@ -3,6 +3,9 @@ import os
 from ping3 import ping
 import requests
 from ipaddress import IPv4Network
+import logging
+
+logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 
 def ping_ip(ip, count=4):
