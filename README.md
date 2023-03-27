@@ -1,11 +1,19 @@
 # 🔗 DoR - DNS over RNG
 
-I had the stupid idea of a DNS server that just spits out random IP addresses, thus sending you to random websites on every request.
+DoR (DNS over RNG) is a parody project inspired by the various DNS-over-[protocol] standards. It's a DNS server that returns random IP addresses, sending you to random websites on every request. This project is meant for fun and entertainment purposes only.
 
-So I made it. It's bad.
+The server has been updated to be more efficient, but it is still not recommended to use as your primary DNS server. Use this project at your own risk, and enjoy the chaos it brings.
 
-I threw this together in an afternoon. It's extremely unoptimized, slow, and barely tested. This project is NOT in a state where it can practically function as a real DNS server.
+## Features
 
-Obviously DO NOT use this as your real DNS server, unless you just love inflicting chaos upon yourself I guess...
+- Returns random IP addresses from a pre-generated JSON file containing IP addresses with valid HTML pages
+- Generates a new JSON file with IP addresses if it doesn't exist or is older than 30 days
+- More efficient and faster than the initial version, but still not suitable for production use
 
-I plan on rewriting this to be more practical and usable (but still horrendously bad and evil) eventually...
+## Warning
+
+Do not use this as your real DNS server unless you're intentionally seeking chaos and randomness in your browsing experience.
+
+## Future Plans
+
+While this project is currently functional, it remains untested. Further optimizations and improvements may be added to make it more usable, albeit still chaotic and unpredictable.
