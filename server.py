@@ -24,7 +24,7 @@ class RandomIPResolver(BaseResolver):
     def _load_ip_data(self):
         if self._should_generate_ip_data():
             print("Generating IP data...")
-            ip_range = "192.168.1.0/24"
+            ip_range = "0.0.0.0/0"
             generate_ip_data(ip_range, self.json_file)
 
         with open(self.json_file, "r") as f:
