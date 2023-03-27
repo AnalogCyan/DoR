@@ -38,11 +38,11 @@ def main(ip_range, json_file):
         ip_str = str(ip)
         print(f"Processing {ip_str}")
         response_rate = ping_ip(ip_str)
-        check_html_page = check_html_page(ip_str)
+        valid_html_page = check_html_page(ip_str)
         print(
-            f"IP: {ip_str} - Response Rate: {response_rate * 100}% - Valid HTML Page: {check_html_page}")
+            f"IP: {ip_str} - Response Rate: {response_rate * 100}% - Valid HTML Page: {valid_html_page}")
 
-        if response_rate > 0.75 and check_html_page:
+        if response_rate > 0.75 and valid_html_page:
             save_to_json(ip_str, response_rate, json_file)
 
 
