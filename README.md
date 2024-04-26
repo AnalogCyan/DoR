@@ -41,7 +41,7 @@ export SHODAN_API_KEY=your_shodan_api_key_here
 ```
 
 2. **Install Python and Dependencies:**
-   Ensure you have Python 3.x installed along with the required packages (`requests`, `shodan`, etc.). You can install the required packages using `pip`:
+   Ensure you have Python 3.x installed along with the required packages. You can install the required packages using `pip`:
 
 ```bash
 pip install -r requirements.txt
