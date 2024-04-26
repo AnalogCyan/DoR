@@ -2,7 +2,7 @@
 
 DNS-over-RNG (DoR) is a parody project inspired by the various DNS-over-`protocol` standards. This unique DNS server utilizes the Shodan API to function, returning random IP addresses of operational web servers, allowing users to land on random websites with each DNS request. Intended for fun and entertainment, DoR provides an unconventional browsing experience.
 
-The server employs a local cache mechanism to efficiently manage API requests, reducing the frequency of fetching data and adhering to API rate limits. While updated for greater efficiency, it is still not recommended for use as your primary DNS server. Embrace the chaos but proceed with caution.
+The server employs a local cache mechanism to efficiently manage API requests, reducing the frequency of fetching data and adhering to API rate limits. While updated for greater efficiency, it is still not recommended for use as your primary DNS server. Embrace the chaos but proceed with caution. >:3
 
 ## Features
 
@@ -11,15 +11,17 @@ The server employs a local cache mechanism to efficiently manage API requests, r
 - Returns random, operational IP addresses from the cache, ensuring an unpredictable browsing experience.
 - Improved efficiency through caching, reducing unnecessary API calls and speeding up response times.
 
-## Live Instance
+## Live Instances
 
 I was planning on hosting a live instance of the DNS-over-RNG server for demonstration, but have run into some issues doing so. If anyone knows the best way to host something like this, please let me know!
 
-If anyone spins up their own instance, please feel free to submit a pull request adding it to the list of instances below.
+If anyone spins up their own public instance, please feel free to submit a pull request adding it to the list of instances below.
 
-DNS Server: `placeholder-addr`
+DNS Servers:
 
-Please note that the live instance is also not intended for production use and should only be used for testing and entertainment.
+- `placeholder-data`
+
+Please note that live instances are also not intended for production use and should only be used for testing and entertainment.
 
 ## How It Works
 
