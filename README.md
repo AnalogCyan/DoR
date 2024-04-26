@@ -73,7 +73,7 @@ For convenience, the project can also be run using Docker, which simplifies the 
 
 2. **Pull the Docker Image:**
 
-   - If the Docker image is available from Docker Hub, you can pull it using:
+   - To pull the Docker container from Docker Hub, run:
      ```bash
      docker pull analogcyan/dns-over-rng:latest
      ```
