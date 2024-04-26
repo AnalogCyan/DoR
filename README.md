@@ -15,7 +15,7 @@ The server employs a local cache mechanism to efficiently manage API requests, r
 
 A live instance of the DNS-over-RNG server is currently hosted on my server. You can connect to this server and experience the random browsing effect by configuring your DNS settings to use the following server:
 
-DNS Server: `dor.thayn.me`
+DNS Server: `placeholder-addr`
 
 Please note that the live instance is also not intended for production use and should only be used for testing and entertainment.
 
