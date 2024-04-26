@@ -13,7 +13,9 @@ The server employs a local cache mechanism to efficiently manage API requests, r
 
 ## Live Instance
 
-A live instance of the DNS-over-RNG server is currently hosted on my server. You can connect to this server and experience the random browsing effect by configuring your DNS settings to use the following server:
+I was planning on hosting a live instance of the DNS-over-RNG server for demonstration, but have run into some issues doing so. If anyone knows the best way to host something like this, please let me know!
+
+If anyone spins up their own instance, please feel free to submit a pull request adding it to the list of instances below.
 
 DNS Server: `placeholder-addr`
 
