@@ -29,10 +29,30 @@ There are multiple ways you can set up and run DNS over RNG. You can run it dire
 
 ### Running Directly with Python
 
-1. Ensure you have Python 3.x installed along with the required packages (`requests`, `shodan`, etc.).
-2. Clone the repository and navigate to the directory.
-3. Run the server script.
-4. Configure your system or router to use the provided server's address as the DNS server.
+1. **Set the Shodan API Key:**
+   Ensure the `SHODAN_API_KEY` environment variable is set to your Shodan API key. You can set it temporarily by running the following command:
+
+```bash
+export SHODAN_API_KEY=your_shodan_api_key_here
+```
+
+2. **Install Python and Dependencies:**
+   Ensure you have Python 3.x installed along with the required packages (`requests`, `shodan`, etc.). You can install the required packages using `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run the Server:**
+   Run the server using the following command:
+
+```bash
+python server.py
+```
+
+4. **Configure Your DNS:**
+
+   Configure your system or router to use your host machine’s IP as the DNS server.
 
 ### Running with Docker
 
