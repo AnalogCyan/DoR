@@ -2,7 +2,7 @@ version: "3.8"
 services:
   DoR:
     container_name: DoR
-    image: AnalogCyan/DoR
+    image: analogcyan/dns-over-rng:latest
     restart: unless-stopped
     ports:
       - "53:53/udp"

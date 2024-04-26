@@ -71,7 +71,7 @@ For convenience, the project can also be run using Docker, which simplifies the 
 
    - If the Docker image is available from Docker Hub, you can pull it using:
      ```bash
-     docker pull AnalogCyan/DoR:latest
+     docker pull analogcyan/dns-over-rng:latest
      ```
    - Alternatively, you can build the image locally with:
      ```bash
