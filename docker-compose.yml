@@ -2,7 +2,12 @@ version: "3.8"
 services:
   DoR:
     container_name: DoR
-    image: dor
+    image: AnalogCyan/DoR
     restart: unless-stopped
     ports:
       - "53:53/udp"
+      - "53:53/tcp"
+    environment:
+      - SHODAN_API_KEY=${SHODAN_API_KEY}
+    volumes:
+      - ./cache:/app/cache
